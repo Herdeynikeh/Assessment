@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Form</title>
+    <style>
+      body {
+        margin: 295px;
+      }
+      form {
+        margin: 295px;
+        padding: 15px 7px;
+        border-radius: solid;
+
+        background: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="mailto:jatfol3333@yahoo.com">
+      <fieldset>
+        <legend>Purchases</legend>
+
+        <p>
+          Product Name: <br />
+          <input type="text" name="productName" accesskey="f" tabindex="1" />
+        </p>
+        <p>
+          Quantity: <br />
+          <input type="text" name="Quantity" accesskey="s" tabindex="s" />
+        </p>
+        <br />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Personal Details</legend>
+        <p>
+          First Name: <br />
+          <input type="text" name="firstName" accesskey="h" tabindex="3" />
+        </p>
+        <p>
+          Last Name: <br />
+          <input type="text" name="lasttName" accesskey="h" tabindex="4" />
+        </p>
+        <br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Credit Card Details</legend>
+        <p>
+          Credit Card Type: <br />
+          <input type="radio" name="card" />
+          <label for="Visa">Visa</label> <br />
+          <input type="radio" name="card" />
+          <label for="Mastercard">Mastercard</label>
+        </p>
+
+        <p>
+          Credit Card Number: <br />
+          <input type="text" name="credit" accesskey="m" tabindex="5" />
+        </p>
+
+        <p>
+          Expiry Date: <br />
+          <input type="text" name="Date" accesskey="n" tabindex="6" />
+        </p>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Billing Information</legend>
+        <p>
+          Postal Address: <br />
+          <textarea name="postal" cols="30" rows="5"></textarea>
+        </p>
+        <p>
+          Home Address:
+          <input type="checkbox" />
+          <label for="same">same as above</label>
+          <br />
+          <textarea name="home" cols="30" rows="5"></textarea>
+        </p>
+        <button>Place my order</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
